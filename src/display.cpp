@@ -125,7 +125,6 @@ void drawCube(Shader &ourShader)
     glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
 
-  
     ourShader.use();
     glm::mat4 model = glm::translate(glm::mat4(1.0f),glm::vec3(0,0,0));
 
